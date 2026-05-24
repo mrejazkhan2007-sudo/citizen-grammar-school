@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Citizen Grammar School</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+/* TOP BAR */
+
+.top-bar{
+background:#001f4d;
+color:white;
+padding:10px;
+display:flex;
+justify-content:space-around;
+font-size:14px;
+}
+
+/* HEADER */
+
+header{
+background:#003366;
+color:white;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:70px;
+height:70px;
+background:gold;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+}
+
+.logo-text h1{
+font-size:32px;
+}
+
+.logo-text p{
+color:#ffd700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* HERO SECTION */
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:-1;
+}
+
+.hero-content h3{
+font-size:35px;
+color:gold;
+margin-bottom:10px;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:25px;
+}
+
+/* FEATURES */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+background:#003366;
+color:white;
+margin-top:-70px;
+position:relative;
+z-index:10;
+margin-left:5%;
+margin-right:5%;
+border-radius:15px;
+overflow:hidden;
+}
+
+.feature{
+padding:30px;
+text-align:center;
+border-right:1px solid rgba(255,255,255,.1);
+}
+
+.feature h3{
+color:gold;
+margin-bottom:10px;
+}
+
+/* SECTIONS */
+
+.section{
+padding:70px 10%;
+}
+
+.section h2{
+font-size:35px;
+color:#003366;
+margin-bottom:20px;
+}
+
+.section p{
+line-height:1.8;
+font-size:18px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* CONTACT */
+
+.contact{
+background:#003366;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#001f3f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+padding:20px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content h3{
+font-size:25px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.top-bar{
+flex-direction:column;
+text-align:center;
+gap:5px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+<div>📍 Zafar Abad Colony, D.I. Khan</div>
+<div>📱 WhatsApp: 0315-9324494</div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo-box">
+
+<div class="logo">🏫</div>
+
+<div class="logo-text">
+<h1>The Citizen Grammar School</h1>
+<p>English Medium School | Play Group to 7th Class</p>
+</div>
+
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#principal">Principal</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="video/g.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h3>Welcome To</h3>
+<h1>The Citizen Grammar School</h1>
+<p>Building Bright Futures Through Quality Education</p>
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="feature">
+<h3>📚 English Medium</h3>
+<p>Quality English Education</p>
+</div>
+
+<div class="feature">
+<h3>🎓 Play Group To 7th</h3>
+<p>Modern Learning System</p>
+</div>
+
+<div class="feature">
+<h3>👨‍🏫 Qualified Teachers</h3>
+<p>Experienced Staff</p>
+</div>
+
+<div class="feature">
+<h3>🛡 Safe Environment</h3>
+<p>Friendly Atmosphere</p>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+<h2>About Our School</h2>
+
+<p>
+The Citizen Grammar School is committed to providing quality English-medium education in a safe and inspiring environment. Located in Zafar Abad Colony, D.I. Khan, our school focuses on academic excellence, discipline, confidence and character building. We help students develop knowledge and skills needed for a successful future.
+</p>
+
+</section>
+
+<!-- PRINCIPAL -->
+
+<section class="section" id="principal">
+
+<h2>Principal's Message</h2>
+
+<p>
+<strong>Mr. Ejaz Khan</strong><br><br>
+
+Education is the foundation of success. At The Citizen Grammar School, we believe every child has unique potential. Our mission is to provide quality education while developing confidence, discipline and strong moral values.
+</p>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="section" id="gallery">
+
+<h2>School Gallery</h2>
+
+<div class="gallery">
+
+<img src="image/image.jpg" alt="Student">
+
+<img src="image/images.jfif" alt="Student">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Zafar Abad Colony, D.I. Khan</p>
+
+<p>📱 WhatsApp: 0315-9324494</p>
+
+<p>🏫 The Citizen Grammar School</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2025 The Citizen Grammar School. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
